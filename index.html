@@ -1,13 +1,113 @@
-<!DOCTYPE HTML>  
-<html>
-<head>
-</head>
-<body>  
+<!DOCTYPE html>
 
-<?php
-$txt = "Hello" ; 
-echo "Hello $txt" ; 
-?>
+
+<html>
+	
+<head>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@100&family=Lobster&display=swap" rel="stylesheet">
+	
+	
+	
+	</head>
+	
+	<style>
+		
+		* {
+			margin : 0 ;
+			padding : 0 ; 
+			box-sizing : border-box ; 
+			}
+			
+		:root {
+			--main-font-color : red ; 
+			--main-bg-color : black ;
+			}
+		
+		body {
+			background-color : var(--main-bg-color) ;
+			}
+			
+			
+			h1 {
+				text-align : center ; 
+				color : var(--main-font-color) ; 
+				font-size : 15px ;
+				font-family: 'Lobster', cursive;
+				}
+				
+				form {
+					border : 2px solid gray ; 
+					width : calc(100% - 40%) ; 
+					height : 200px ; 
+					margin : auto ; 
+					position : relative ; 
+					top : 40px ;
+					}
+					
+					
+					#label-one {
+						color : var(--main-font-color) ; 
+						font-variant : small-caps ; 
+						position : absolute;
+						left : 185px ; 
+						}
+					
+					#surname {
+						position : absolute ; 
+						top : 30px ; 
+						width : 60% ; 
+						left : 75px ; 
+						}
+					
+					
+					#label-two {
+					color : var(--main-font-color) ; 
+						font-variant : small-caps ; 
+						position : absolute;
+						left : 185px ; 
+						top : 60px ;
+						}
+						
+						#password {
+							position : absolute ; 
+						top : 30px ; 
+						width : 60% ; 
+						left : 75px ; 
+						top : 90px ;
+							}
+							
+							#main-button {
+								width : 60% ; 
+								position : absolute ;
+								top : 140px ; 
+								left : 75px ; 
+								background-color : green ;
+								}
+						
+		            
+		            
+		</style>
+		
+
+<body>
+	
+<h1>This form, this website is just for test and sample purposes. This doesn't affect any platforms, organizations or names intentionally not being mentioned below and above on this site.</h1>
+
+  <form action="/storage.html">
+  	
+  <label id="label-one" for="surname">NAME</label>
+  <input type="text" id="surname" name="surname"></input>
+  	<label id="label-two" for="password">PASS</label>
+  <input type="number" id="password" name="password">
+  	
+  	<button type="submit" id="main-button">SUBMIT</button>
+  
+  
+  </form>
+  
+
 
 </body>
+
 </html>
